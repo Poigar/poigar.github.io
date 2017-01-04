@@ -1,0 +1,67 @@
+*{
+	font-family: 'Ubuntu', arial;
+}
+body{
+	background: url('../img/worn_dots.png') repeat center center;
+}
+.background {
+    height:100vh;
+    width: 100%;
+    background: url('../img/bg.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+	text-align: center;
+	display:block;
+	border-bottom: 4px solid #ffa726;
+}
+
+.title{
+	text-align: center;
+	margin-top:0px;
+	padding-top: 100px;
+	color:white;
+}
+
+.name{
+	color:white;
+	font-size: 24px;
+}
+.latest{
+	font-size:22px;
+}
+
+.preview-latest{
+	border: 2px solid #ffa726;
+	border-radius: 4px;
+}
+.project{
+	border: 2px solid #ffa726;
+}
+.details{
+	color:#ffa726;
+}
+.details-gray{
+	color:lightgray;
+}
+.circle{
+	border: 2px solid #fff;
+}
+.badge-new{
+	background-color:black;
+	color:white;
+	padding-top:4px;
+	padding-bottom: 4px;
+	padding-left:14px;
+	padding-right:14px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+.container{
+	margin-bottom:50px;
+}
+.filter-active{
+	color: #ffa726 !important;
+}
