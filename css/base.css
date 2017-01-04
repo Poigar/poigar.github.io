@@ -65,3 +65,9 @@ body{
 .filter-active{
 	color: #ffa726 !important;
 }
+
+.download-btn{
+	border:1px solid lightgray;
+	margin-bottom:10px;
+	width: 200px;
+}
