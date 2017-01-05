@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/ww_logo.png">
-
+    <script type="text/javascript" src="https://static.itch.io/api.js"></script>
     
 
 
@@ -94,16 +94,17 @@
           In this game your main task is to destroy opponents base and keeping your base safe with an army of cat soldiers, cars, tanks and more.<br>
           This game is meant to be played by two players on the same computer.<br>
           Game is available for web and desktop platforms(Pc, Linux, MacOS).<br>
-          Desktop versions are patched web versions. We have tested only Linux and Windows versions.<br>
-          <i>This game is uploaded on Itch.io, all downloads are available for free.
-              To download this game, go to <a href="https://reinards.itch.io/gatito-war" target="none">this website</a>, scroll to the bottom of the page. Now you can support us and donate some money or just get the game for free.
-          </i>
+          Desktop versions are patched web versions. We have tested only Linux and Windows versions.<br><br>
+          <i>This game is uploaded on Itch.io, all downloads are available for free.<br>
+              To download this game, go to <a href="https://reinards.itch.io/gatito-war" target="none">this website</a>, scroll to the bottom of the page.<br>Now you can support us and donate some money or just get the game for free.
+          </i><br>
 
           <span class="details">First release: <b>24.08.2016</b></span><br><br>
         </p>
       </div>
       <div class="card-action">
           <a href="https://wisdomworkshop.github.io/GatitoWar/" target="none">Play this game <i class="fa fa-gamepad" aria-hidden="true"></i></a>
+          <a id="download-btn" href="#!">Download <i class="fa fa-downloads" aria-hidden="true"></i></a>
       </div>
     </div>
 
@@ -174,7 +175,13 @@
             </div>
           </div>
         </footer>
-
+<script type="text/javascript">
+  Itch.attachBuyButton(document.getElementById("download-btn"), {
+    // replace the following with the correct information about your game
+    user: "Reinards",
+    game: "Gatito War"
+  });
+</script>
 
   <script src="other/jquery/jquery.min.js"></script>
   <script src="js/script.js"></script>
