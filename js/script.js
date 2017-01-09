@@ -1,5 +1,5 @@
-var lastDateBlog = 1483543689285;
-var lastDateProject = 1483543689285;
+var lastDateBlog = 1483980253012;
+var lastDateProject = 1483980253012;
 
 var blogNotif = "New!";
 var projectsNotif = "New!";
@@ -65,6 +65,20 @@ function notify(n){
 }
 
 $( document ).ready(function() {
+
+	$(".read-more").hide();
+
+	$("#read-btn-1").click(function(){
+		$( "#read-more-1" ).slideToggle( "slow", function() {
+		    // Animation complete.
+		});
+	});
+	$("#read-btn-2").click(function(){
+		$( "#read-more-2" ).slideToggle( "slow", function() {
+		    // Animation complete.
+		});
+	});
+
     $( "#f-html" ).click(function() {
 	  if(!f_html){
 	  	$("#f-html").addClass("filter-active");

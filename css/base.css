@@ -71,3 +71,13 @@ body{
 	margin-bottom:10px;
 	width: 200px;
 }
+
+.read-btn{
+	color:#418196;
+	font-size: 16px;
+	cursor:pointer;
+}
+
+.read-hidden{
+	visibility: hidden;
+}
