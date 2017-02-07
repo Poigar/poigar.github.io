@@ -1,4 +1,4 @@
-var lastDateBlog = 1483980253012;
+var lastDateBlog = 1486498660913;
 var lastDateProject = 1483980253012;
 
 var blogNotif = "New!";
