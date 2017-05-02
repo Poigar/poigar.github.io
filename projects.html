@@ -14,211 +14,133 @@
 
     <link href="other/materialize/css/materialize.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link href="other/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/ww_logo.png">
-    <script type="text/javascript" src="https://static.itch.io/api.js"></script>
+
     
 
 
 </head>
-<body>
+<body onload="checkNews()">
 
-  <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper orange lighten-1" style="padding-left:10px;padding-right: 10px;">
-      <a href="index.html" class="brand-logo"><i class="fa fa-gamepad" aria-hidden="true"></i> Wisdom Workshop</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="blog.html">Blog <span class="blog_span"></span></a></li>
-        <li class="active"><a href="projects.html">Projects <span class="projects_span"></span></a></li>
-      </li>
+  <nav class="main-menu">
+    <div class="nav-wrapper orange lighten-1">
+      <a href="index.html" class="brand-logo">Wisdom Workshop</a>
+      <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+      <ul class="side-nav" id="side-nav">
+        <li class="active"><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About us</a></li>
       </ul>
     </div>
   </nav>
+
+  <div class="background-projects">
+    <h1 class="title" style="margin-bottom: 50px;">Projects</h1>
   </div>
 
-  <div class="container">
-    <h2>Projects</h2>
+  <div class="container" style="margin-top:50px;">
+    <h5>Follow our <a href="https://www.facebook.com/WisdomWShop/" target="none">Facebook Page</a> in order to receive notifications and participate in our game development</h5>
 
-    <div class="card grey lighten-5">
-          <div class="card-content">
-            <p style="color:gray;font-size:20px;"><i class="fa fa-search" aria-hidden="true"></i> Filter (Shows everything by default)</p><br>
-            <a id="f-html" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;"><i class="fa fa-html5" aria-hidden="true"></i></a>
-            <a id="f-windows" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;"><i class="fa fa-windows" aria-hidden="true"></i></a>
-            <a id="f-linux" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;"><i class="fa fa-linux" aria-hidden="true"></i></a>
-            <a id="f-apple" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;"><i class="fa fa-apple" aria-hidden="true"></i></a>
-            <a id="f-android" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;"><i class="fa fa-android" aria-hidden="true"></i></a>
-            <a id="f-game" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;">Game</a>
-            <a id="f-app" class="waves-effect waves-orange btn-flat filter-active" style="border:1px solid lightgray;">Application</a>
+    <div class="row newsfeed">
+
+        <div class="card horizontal project">
+          <div class="card-image">
+            <img class="project-img" src="https://lh3.googleusercontent.com/EuCleMhdl6SAFVJtRmuliQcipetgY4LNtrWLZvLGz5HoMN3OIynyh1gNuu9NU0zhTQ=h900-rw">
           </div>
-    </div>
-
-    <!-- MESimulator -->
-    <!-- <div class="card grey lighten-5 project">
-      <div class="card-content">
-        <span class="card-title">ME War Simulator <span class="details">
-          <i class="fa fa-html5" aria-hidden="true"></i> </span>
-          <span class="details-gray">
-            <i class="fa fa-linux" aria-hidden="true"></i>
-            <i class="fa fa-windows" aria-hidden="true"></i>
-            <i class="fa fa-apple" aria-hidden="true"></i>
-            <i class="fa fa-android" aria-hidden="true"></i>
-          </span>
-        </span>
-        <p>This is a simulator in which you can see how countries and other things are evolving if you give power to one or multiple of them.<br><br>
-          <span class="details">First release: <b>30.10.2016</b></span>
-        </p>
-      </div>
-      <div class="card-action">
-        <a href="#">Launch this simulator <i class="fa fa-globe" aria-hidden="true"></i></a>
-      </div>
-    </div> -->
-
-    <!-- The Umbrella -->
-    <div class="card grey lighten-5 project f-windows f-linux f-apple f-game">
-      <div class="card-content">
-        <span class="card-title">The Umbrella <span class="details">
-        <i class="fa fa-linux" aria-hidden="true"></i>
-        <i class="fa fa-apple" aria-hidden="true"></i>
-        <i class="fa fa-windows" aria-hidden="true"></i>
-        </span>
-        <span class="details-gray">
-          <i class="fa fa-html5" aria-hidden="true"></i>
-          <i class="fa fa-android" aria-hidden="true"></i>
-        </span>
-        </span>
-        <p>You are a cat lover standing at the buss station.<br>
-            It is raining and you notice a cat.<br>
-            You wanna keep that cat dry, so you hold your umbrella above the cat.<br>
-            The cat is very playful, he runs around the rain.<br>
-            You MUST follow him and keep him dry.<br>
-            Use left and right arrow keys to move<br><br>
-          <i>This game is uploaded on Itch.io, all downloads are available for free.<br>
-              You can view The Umbrella on Itch.io <a href="https://reinards.itch.io/the-umbrella" target="none"> here!</a><br>
-              You can even donate if you want to support us and our game development :)
-          </i><br><br>
-        </p>
-        <span class="details">First release: <b>09.01.2017</b></span><br><br>
-      </div>
-      <div class="card-action">
-          <a id="download-btn-2" href="#!"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-      </div>
-    </div>
-
-    <!-- Gatito -->
-    <div class="card grey lighten-5 project f-html f-windows f-linux f-apple f-game">
-      <div class="card-content">
-        <span class="card-title">Gatito War <span class="details">
-        <i class="fa fa-html5" aria-hidden="true"></i>
-        <i class="fa fa-linux" aria-hidden="true"></i>
-        <i class="fa fa-apple" aria-hidden="true"></i>
-        <i class="fa fa-windows" aria-hidden="true"></i>
-        </span>
-        <span class="details-gray">
-          <i class="fa fa-android" aria-hidden="true"></i>
-        </span>
-        </span>
-        <p>This is a game made during the summer of 2016.<br>
-          In this game your main task is to destroy opponents base and keeping your base safe with an army of cat soldiers, cars, tanks and more.<br>
-          This game is meant to be played by two players on the same computer.<br>
-          Game is available for web and desktop platforms(Pc, Linux, MacOS).<br>
-          Desktop versions are patched web versions. We have tested only Linux and Windows versions.<br><br>
-          <i>This game is uploaded on Itch.io, all downloads are available for free.<br>
-              You can view Gatito War on Itch.io <a href="https://reinards.itch.io/gatito-war" target="none"> here!</a><br>
-              You can even donate if you want to support us and our game development :)
-          </i><br><br>
-        </p>
-        <span class="details">First release: <b>24.08.2016</b></span><br><br>
-      </div>
-      <div class="card-action">
-          <a href="https://wisdomworkshop.github.io/GatitoWar/" target="none"><i class="fa fa-gamepad" aria-hidden="true"></i> Play this game</a>
-          <a id="download-btn-1" href="#!"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-      </div>
-    </div>
-
-        <!-- Beetle -->
-        <div class="card grey lighten-5 project f-html f-game">
-          <div class="card-content">
-            <span class="card-title">Run Run Beetle <span class="details">
-              <i class="fa fa-html5" aria-hidden="true"></i> </span>
-              <span class="details-gray">
-                <i class="fa fa-linux" aria-hidden="true"></i>
-                <i class="fa fa-windows" aria-hidden="true"></i>
-                <i class="fa fa-apple" aria-hidden="true"></i>
-                <i class="fa fa-android" aria-hidden="true"></i>
-              </span>
-            </span>
-            <p>In this game you are an insect. Your task is to avoid the arm that is trying to hit you. Collect cheese to unlock sixth sense and new insects.<br><br>
-              <span class="details">First release: <b>01.05.2016</b></span>
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="http://reinards.github.io/RunRunBeetle/" target="none">Play this game <i class="fa fa-gamepad" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <!-- GoG -->
-        <div class="card grey lighten-5 project f-html f-game">
-          <div class="card-content">
-            <span class="card-title">Games of Gravity <span class="details">
-              <i class="fa fa-html5" aria-hidden="true"></i> </span>
-              <span class="details-gray">
-                <i class="fa fa-linux" aria-hidden="true"></i>
-                <i class="fa fa-windows" aria-hidden="true"></i>
-                <i class="fa fa-apple" aria-hidden="true"></i>
-                <i class="fa fa-android" aria-hidden="true"></i>
-              </span>
-            </span>
-            <p>This is an HTML5 runner game. You can switch gravity up and down - this is how you are supposed to avoid flying crates.<br>
-            If you get past 30 points, you can spin a wheel.<br><br>
-              <span class="details">First release: <b>14.04.2016</b></span>
-            </p>
-          </div>
-          <div class="card-action">
-              <a href="http://reinards.github.io/GamesOfGravity/" target="none">Play this game <i class="fa fa-gamepad" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-    </div>
-
-  <footer class="page-footer orange lighten-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">How can <b>you</b> help?</h5>
-                <p class="grey-text text-lighten-4">Share this website with others and don't forget to smile :)</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">We are on Itch.io</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://reinards.itch.io/">Support us!</a></li>
-                </ul>
-              </div>
+          <div class="card-stacked">
+            <div class="card-content">
+            <h4>Squane <i class="fa fa-android platform" aria-hidden="true"></i></h4>
+              <p>Squane is our first game that we publish on Google Play.<br>
+              It was our summer project two years ago. <br><br>
+              In this game you have to remember in what color are the squares. When they turn grey, you have to recolor them.<br>
+              Squane offers 7 different board shapes, 4 themes and some other cool features.<br>
+              Give this game a shot and download it now on <b>Google Play</b>
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://play.google.com/store/apps/details?id=org.wisdomworkshop.squane" target="none"><b>Get Squane</b></a>
             </div>
           </div>
-          <div class="footer-copyright">
+        </div>
+
+        <div class="card horizontal project">
+          <div class="card-image">
+            <img class="project-img" src="https://img.itch.zone/aW1hZ2UvMTEwNjU0LzUxNDAyMy5wbmc=/315x250%23c/DHo7Hc.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>The Umbrella
+              <i class="fa fa-linux platform" aria-hidden="true"></i>
+              <i class="fa fa-apple platform" aria-hidden="true"></i>
+              <i class="fa fa-windows platform" aria-hidden="true"></i>
+              </h4>
+              <p>This is a game we made for a game jam. You can read about it in the newsfeed.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://reinards.itch.io/the-umbrella" target="none"><b>Get The Umbrella</b></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card horizontal project">
+          <div class="card-image">
+            <img class="project-img" src="https://img.itch.zone/aW1hZ2UvMTA5ODU0LzUxMDQxNy5wbmc=/315x250%23c/%2F6NxF3.png">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Gatito War
+              <i class="fa fa-html5 platform" aria-hidden="true"></i>
+              </h4>
+              <p>This is one of our summer projects. A cool little browser game.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://reinards.itch.io/gatito-war" target="none"><b>Play this game</b></a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+    <footer class="page-footer orange lighten-1">
             <div class="container">
-            © 2017 Made by Reinards Jānis Saulītis
-            <a class="grey-text text-lighten-4 right" href="http://www.sarkanie.org/">sarkanie.org</a>
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">How can <b>you</b> help?</h5>
+                  <p class="grey-text text-lighten-4">Share this website with others.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">We are on Itch.io</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" style="text-decoration: underline;" href="https://reinards.itch.io/">Support us!</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </footer>
-<script type="text/javascript">
-  Itch.attachBuyButton(document.getElementById("download-btn-1"), {
-    // replace the following with the correct information about your game
-    user: "Reinards",
-    game: "gatito-war"
-  });
+            <div class="footer-copyright">
+              <div class="container">
+              © 2017 Made by <a style="color:white;text-decoration: underline;" href="https://reinards.github.io" target="none">Reinards Jānis Saulītis</a>
+              <a class="grey-text text-lighten-4 right" href="http://www.sarkanie.org/">sarkanie.org</a>
+              </div>
+            </div>
+          </footer>
 
-  Itch.attachBuyButton(document.getElementById("download-btn-2"), {
-    // replace the following with the correct information about your game
-    user: "Reinards",
-    game: "the-umbrella"
-  });
-</script>
+
+
+  <script>
+    function checkNews(){
+      checkNewsReal();
+    }
+  </script>
 
   <script src="other/jquery/jquery.min.js"></script>
   <script src="js/script.js"></script>

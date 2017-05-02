@@ -14,10 +14,8 @@
 
     <link href="other/materialize/css/materialize.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link href="other/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/ww_logo.png">
 
@@ -27,18 +25,20 @@
 </head>
 <body onload="checkNews()">
 
-  <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper orange lighten-1" style="padding-left:10px;padding-right: 10px;">
-      <a href="index.html" class="brand-logo"><i class="fa fa-gamepad" aria-hidden="true"></i> Wisdom Workshop</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="blog.html">Blog <span class="blog_span"></span></a></li>
-        <li><a href="projects.html">Projects <span class="projects_span"></span></a></li>
-      </li>
+  <nav class="main-menu">
+    <div class="nav-wrapper orange lighten-1">
+      <a href="index.html" class="brand-logo">Wisdom Workshop</a>
+      <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+      <ul class="side-nav" id="side-nav">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About us</a></li>
       </ul>
     </div>
   </nav>
-  </div>
 
   <div class="background">
     <h1 class="title" style="margin-bottom: 50px;">Indie game developers</h1>
@@ -48,73 +48,94 @@
       <div class="col s4"><div style="padding-left:0px;"><img class="circle responsive-img" src="img/resize_emils_logo.jpg"><p class="name">Emīls</p></div></div>
       <div class="col s4"><div style="float:left;padding-left:0px;"><img class="circle responsive-img" src="img/niks_logo.png"><p class="name">Niks</p></div></div>
     </div>
-
-  <!--   <a id="reinards"></a>
-    <a id="niks"> </a> -->
   </div>
 
   <div class="container" style="margin-top:50px;">
-    <div class="row">
-      <div class="col s12 m6">
-        <h3 class="center-align">Latest project</h2>
-        <div style="border-right: 2px dashed #ffa726;padding-right:40px;">
-          <img style="margin:auto;display:block;" class="preview-latest responsive-img" src="img/umbrella.png">
-          <p class="latest">You are a cat lover standing at the buss station.<br>
-          It is raining and you notice a cat.<br>
-          You wanna keep that cat dry, so you hold your umbrella above the cat.<br>
-          The cat is very playful, he runs around the rain.<br>
-          You MUST follow him and keep him dry.<br>
-          Use left and right arrow keys to move<br>
-          </p>
-          <a href="projects.html" class="waves-effect waves-light btn-large orange lighten-1" style="width:100%">All projects</a>
+     <div class="row small-nav">
+      <div class="col s6">
+        <a href="projects.html" class="waves-effect waves-light btn-large red darken-1">See our projects ( 3 ) </a>
+      </div>
+      <div class="col s6"><a href="about.html" class="waves-effect waves-light btn-large orange lighten-1">See who we are </a></div>
+    </div>
+
+    <div class="row newsfeed">
+      <h3><b>Newsfeed</b></h3>
+
+    <!-- Squane -->
+    <div class="card horizontal news">
+      <div class="card-image">
+        <img style="width:250px;height:auto;" src="https://cnet4.cbsistatic.com/img/QJcTT2ab-sYWwOGrxJc0MXSt3UI=/2011/10/27/a66dfbb7-fdc7-11e2-8c7c-d4ae52e62bcc/android-wallpaper5_2560x1600_1.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h5 class="news-title">The release of Squane</h5>
+          <p>After two years of inactivity, we have finally published the game Squane. We rebuilt it with the Godot's engine and added some new features.<br>
+          The game has got 6 five-star reviews in two days... Who knows what the future holds for it.
+          Squane is available for free on Google Play to phones with <b>android 2.3</b> and up.</p>
+          Search for <b>"squane"</b> or <b>wisdom workshop</b>
         </div>
-        
+        <div class="card-action">
+          <a target="none" href="https://play.google.com/store/apps/details?id=org.wisdomworkshop.squane"><b>Get Squane</b></a>
+          <span class="news-date">30.04.2017</span>
+        </div>
       </div>
-      <div class="col s12 m6" style="padding-left:20px;">
-        <h3 class="center-align">Introduction</h2>
-        <p class="latest">
-          <b>Hello there!</b><br>
-          We are a small group of people(3 for now) that make games in free time.<br><br>
-          These are some of the most popular games we have made:<br>
-          <a>Squane</a><br>
-          <a href="https://wisdomworkshop.github.io/GatitoWar/" target="none">Gatito War</a><br>
-          <a href="https://reinards.itch.io/the-umbrella" target="none">The Umbrella</a><br>
-          <a href="http://reinards.github.io/GamesOfGravity/" target="none">Games of Gravity</a><br><br>
-          We have started to experiment with different frameworks and engines.<br>It means that we will have some games mainly for Linux, Windows and MacOS sooner or later.<br><br>
-          Here is a list of Github profiles with some repos for your to check out:<br>
-          <a href="https://github.com/Reinards" target="none">Reinards</a><br>
-          <a href="https://github.com/EmilsRLV" target="none">Emīls</a><br>
-          <a href="https://github.com/LaughingApe" target="none">Niks</a><br>
-          <a href="https://github.com/WisdomWorkshop" target="none">Wisdom Workshop</a>
-        </p>
+    </div>
+
+    <!-- Game Jam -->
+    <div class="card horizontal news">
+      <div class="card-image">
+        <img style="width:250px;height:auto;" src="https://i2.wp.com/indiegameriot.com/wp-content/uploads/2015/01/Godot_logo.jpg?fit=654%2C468&w=640">
       </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h5 class="news-title">Godot's game jam</h5>
+          <p>We have been participating in a game jam which's theme was "two buttons". The game engine used was Godot.<br>
+          We performed quite well. We got the 5th place out of 41 possible.<br><br>
+          All the games were rated by developers and other Itch.io users.<br>
+          The rating is made up of 4 smaller ones:<br>
+          <b>
+          Overall: 3.917(stars)<br>
+          Graphics and sounds: 4.000(stars)<br>
+          Theme("Two Buttons"): 4.417(stars)<br>
+          Gameplay: 3.333(stars)<br>
+          </b><br>
+          Our game is called "The umbrella".
+          </p>
+        </div>
+        <div class="card-action">
+          <a target="none" href="https://reinards.itch.io/the-umbrella"><b>Get The Umbrella</b></a>
+          <span class="news-date">07.02.2017</span>
+        </div>
+      </div>
+    </div>
+
     </div>
 
     <h5>Follow our <a href="https://www.facebook.com/WisdomWShop/" target="none">Facebook Page</a> in order to receive notifications and participate in our game development</h5>
   </div>
 
-  <footer class="page-footer orange lighten-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">How can <b>you</b> help?</h5>
-                <p class="grey-text text-lighten-4">Share this website with others and don't forget to smile :)</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">We are on Itch.io</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://reinards.itch.io/">Support us!</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
+    <footer class="page-footer orange lighten-1">
             <div class="container">
-            © 2017 Made by Reinards Jānis Saulītis
-            <a class="grey-text text-lighten-4 right" href="http://www.sarkanie.org/">sarkanie.org</a>
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">How can <b>you</b> help?</h5>
+                  <p class="grey-text text-lighten-4">Share this website with others.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">We are on Itch.io</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://reinards.itch.io/">Support us!</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </footer>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2017 Made by Reinards Jānis Saulītis
+              <a class="grey-text text-lighten-4 right" href="http://www.sarkanie.org/">sarkanie.org</a>
+              </div>
+            </div>
+          </footer>
 
 
 
