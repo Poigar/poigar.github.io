@@ -333,6 +333,12 @@ template {
       .nav_horizontal .link_wrapper .active:hover {
         background-color: #0d0d0d; }
 
+@media only screen and (max-width: 425px) {
+  .nav_horizontal .logo {
+    width: 90px; }
+  .nav_horizontal .link_wrapper a {
+    font-size: 14px; } }
+
 footer {
   width: 100%;
   display: block;
@@ -529,6 +535,25 @@ footer {
   #about {
     width: 90%;
     margin-left: 5%; } }
+
+.splash_screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  z-index: 10; }
+  .splash_screen img {
+    width: 30%;
+    height: auto;
+    margin-left: 50vw;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%); }
+
+@media only screen and (max-width: 425px) {
+  .splash_screen img {
+    width: 50%; } }
 
 body {
   background-color: #f0f0f0;
