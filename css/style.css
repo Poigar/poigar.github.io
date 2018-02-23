@@ -304,13 +304,13 @@ template {
   padding: 0px 5%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   position: fixed;
-  top: 0px; }
+  top: 0px;
+  z-index: 20; }
   .nav_horizontal .logo {
     width: 100px;
     position: fixed;
     top: 0px;
-    left: 5%;
-    z-index: 20; }
+    left: 5%; }
   .nav_horizontal .brand_name {
     display: none; }
   .nav_horizontal .link_wrapper {
