@@ -309,7 +309,8 @@ template {
     width: 100px;
     position: fixed;
     top: 0px;
-    left: 5%; }
+    left: 5%;
+    z-index: 20; }
   .nav_horizontal .brand_name {
     display: none; }
   .nav_horizontal .link_wrapper {
@@ -335,7 +336,7 @@ template {
 
 @media only screen and (max-width: 425px) {
   .nav_horizontal .logo {
-    width: 90px; }
+    width: 80px; }
   .nav_horizontal .link_wrapper a {
     font-size: 14px; } }
 
