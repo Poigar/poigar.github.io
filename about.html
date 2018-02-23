@@ -6,90 +6,50 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My portfolio">
+    <meta name="description" content="Poigar - We're indie developers">
     <meta name="author" content="Reinards Jānis Saulītis">
     <meta name="keywords" content="TESTS">
 
-    <title>Wisdom Workshop</title>
+    <title>Poigar - About page</title>
 
-    <link href="other/materialize/css/materialize.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="other/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/ww_logo.png">
-
-    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="icon" type="image/png" href="img/ww_logo.png"> -->
 
 
 </head>
-<body onload="checkNews()">
-
-  <nav class="main-menu">
-    <div class="nav-wrapper orange lighten-1">
-      <a href="index.html" class="brand-logo">Wisdom Workshop</a>
-      <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="projects.html">Projects</a></li>
-        <li class="active"><a href="about.html">About us</a></li>
-      </ul>
-      <ul class="side-nav" id="side-nav">
-        <li><a href="projects.html">Projects</a></li>
-        <li class="active"><a href="about.html">About us</a></li>
-      </ul>
+<body style="padding: 0px;">
+  <nav id="main_navigation" class="nav_horizontal">
+    <img class="logo" src="img/poigar_cloud.svg">
+    <h1 class="brand_name">Poigar</h1>
+    <div class="link_wrapper">
+      <a href="index.html">Projects</a><a class="active" href="about.html">About us</a>
+      <div class="float_clear"></div>
     </div>
   </nav>
 
-  <div class="background-about">
-    <h1 class="title" style="margin-bottom: 50px;">About us</h1>
-  </div>
+  <section id="about">
+    <div class="valign_table">
+        <div class="valign_cell">
+            <p class="content_description">
+                We are a group of 3 people, who like to make games and apps in our free time.<br>  
+                Our names: Reinards, Niks, Emīls.<br><br>
+                    
+                There are some games which we've made together, and there are some games made by individual members.<br>
+                We have been making games since 2015.<br>
+                Emīls is our most recent member.<br><br>
+            </p>
+            <a href="https://github.com/orgs/Poigar/" target="_blank" class="social_link"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/poigarlatvia/" target="_blank" class="social_link"><i class="fab fa-facebook"></i></a>
+            <a href="https://play.google.com/store/apps/developer?id=Poigar" target="_blank" class="social_link"><i class="fab fa-google-play"></i></a>
+        </div>    
+    </div>
 
-  <div class="container" style="margin-top:50px;">
-    <h4>Who we are?</h4>
-    <h6>We are a group of 3 members, who make games in our free time.<br><br>
-    Our names: Reinards, Niks, Emīls.<br><br>
-    There are some games which we made together, and there are some games made by individual members.<br>
-    We have been making games since 2015.<br>
-    Emīls is our newest member.</h6>
-
-    <h4>What do we do?</h4>
-    <h6>As mentioned above, we make games in our free time.<br>
-    We have one browser-based game called <b>Gatito War</b>, one PC, Linux, MacOS game called <b>The Umbrella</b> and a mobile game called <b>Squane</b>.<br><br>
-    All the games are free to play, Squane is published on Google Play.
-    </h6>
-
-    <h4>Any social links?</h4>
-    <h6>We have a <a href="https://www.facebook.com/WisdomWShop/">facebook page</a> and a <a href="https://github.com/WisdomWorkshop">github repository</a>
-    </h6>
-
-  </div>
-
-    <footer class="page-footer orange lighten-1">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">How can <b>you</b> help?</h5>
-                  <p class="grey-text text-lighten-4">Share this website with others.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">We are on Itch.io</h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" style="text-decoration: underline;" href="https://reinards.itch.io/">Support us!</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2017 Made by <a style="color:white;text-decoration: underline;" href="https://reinards.github.io" target="none">Reinards Jānis Saulītis</a>
-              <a class="grey-text text-lighten-4 right" href="http://www.sarkanie.org/">sarkanie.org</a>
-              </div>
-            </div>
-          </footer>
-
-  <script src="other/jquery/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="other/materialize/js/materialize.min.js"></script>
+  </section>
+<!-- 
+  <footer id="main_footer">
+    <p>Made by <a href="https://reinards.github.io" target="_blank">Reinards Jānis Saulītis</a> | 2018</p>
+  </footer> -->
 </body>
 
 </html>
